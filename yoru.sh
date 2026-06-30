@@ -13,8 +13,8 @@ if [ -z "$VARIANT" ]; then
 fi
 
 # ================= PATH =================
-DEFCONFIG="tissot_defconfig"
-TEMP_DEFCONFIG="tissot_temp_defconfig"
+DEFCONFIG="land_defconfig"
+TEMP_DEFCONFIG="land_temp_defconfig"
 ROOTDIR=$(pwd)
 OUTDIR="$ROOTDIR/out/arch/arm64/boot"
 ANYKERNEL_DIR="$ROOTDIR/AnyKernel"
@@ -25,8 +25,8 @@ KIMG="$OUTDIR/Image.gz"
 export PATH="$ROOTDIR/clang-zyc/bin:$PATH"
 
 # ================= INFO =================
-KERNEL_NAME="Yoru-NonTreble"
-DEVICE="tissot"
+KERNEL_NAME="Yoru"
+DEVICE="land"
 
 # =============== DATE (WIB) ===============
 DATE_TITLE=$(TZ=Asia/Jakarta date +"%d%m%Y")
