@@ -22,7 +22,7 @@ KIMG_DTB="$OUTDIR/Image.gz-dtb"
 KIMG="$OUTDIR/Image.gz"
 
 # ========== TOOLCHAIN (CLANG) ===========
-# export PATH="$ROOTDIR/clang-zyc/bin:$PATH"
+export PATH="$ROOTDIR/clang-zyc/bin:$PATH"
 
 # ================= INFO =================
 KERNEL_NAME="Yoru"
@@ -123,7 +123,7 @@ build_kernel() {
     make -j$(nproc --all) \
         ARCH=arm64 \
         O=out \
-        # CC=clang \
+        CC=clang \
         CROSS_COMPILE=aarch64-linux-gnu- \
         CROSS_COMPILE_ARM32=arm-linux-gnueabi- || {
             send_telegram_error
