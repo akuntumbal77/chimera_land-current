@@ -22,7 +22,7 @@ KIMG_DTB="$OUTDIR/Image.gz-dtb"
 KIMG="$OUTDIR/Image.gz"
 
 # ========== TOOLCHAIN (CLANG) ===========
-export PATH="$ROOTDIR/clang-zyc/bin:$PATH"
+# export PATH="$ROOTDIR/clang-zyc/bin:$PATH"
 
 # ================= INFO =================
 KERNEL_NAME="Yoru"
